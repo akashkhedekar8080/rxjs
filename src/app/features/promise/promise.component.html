@@ -1,0 +1,56 @@
+<!-- <mat-grid-list cols="2" rowHeight="1:1">
+  <mat-grid-tile>1</mat-grid-tile>
+  <mat-grid-tile>2</mat-grid-tile>
+  <mat-grid-tile>3</mat-grid-tile>
+  <mat-grid-tile>4</mat-grid-tile>
+</mat-grid-list> -->
+
+<mat-grid-list cols="1" rowHeight="3:1">
+  <mat-grid-tile>
+    <mat-grid-tile-header>
+      <h2 style="margin: 0; text-align: center">Promise Example</h2>
+    </mat-grid-tile-header>
+    <button
+      mat-raised-button
+      matRipple
+      [matRippleColor]="'lightgrey'"
+      [matRippleUnbounded]="true"
+      [matRippleRadius]="25"
+      (click)="myFunction()"
+      matTooltip="Promise"
+      [matTooltipPosition]="'above'"
+    >
+      Click me
+    </button>
+    <!-- <mat-grid-tile-footer> -->
+    <div style="margin: 0; text-align: center">
+      {{ promise || "Awaiting Promise..." }}
+    </div>
+    <!-- </mat-grid-tile-footer> -->
+  </mat-grid-tile>
+</mat-grid-list>
+<!-- <div class="container">
+  <h1>Promise</h1>
+  <div>
+    <button
+      mat-raised-button
+      matRipple
+      [matRippleColor]="'lightgrey'"
+      [matRippleUnbounded]="true"
+      [matRippleRadius]="25"
+      (click)="myFunction()"
+      matTooltip="Promise"
+      [matTooltipPosition]="'above'"
+    >
+      Click me
+    </button>
+  </div>
+  <div>
+    {{ promise }}
+  </div>
+  <button mat-stroked-button (click)="myFunction()">Click me</button>
+
+  <button mat-button (click)="myFunction()">Click me</button>
+  <button mat-fab (click)="myFunction()">Click me</button>
+  <button mat-mini-fab (click)="myFunction()">Click me</button>
+</div> -->

@@ -1,0 +1,12 @@
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+select {
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 0.5rem;
+}

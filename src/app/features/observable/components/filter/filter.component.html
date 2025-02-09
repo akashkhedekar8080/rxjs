@@ -1,0 +1,56 @@
+<div class="container">
+  <h1>Filter</h1>
+  <hr />
+  <mat-tab-group>
+    <mat-tab label="Ex - 01">
+      <mat-chip><strong>Filter:</strong> by length </mat-chip>
+      <table mat-table #table [dataSource]="msg1">
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef>Name</th>
+          <td mat-cell *matCellDef="let row">{{ row.name }}</td>
+        </ng-container>
+        <ng-container matColumnDef="skill">
+          <th mat-header-cell *matHeaderCellDef>Skill</th>
+          <td mat-cell *matCellDef="let row">{{ row.skill }}</td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="['name', 'skill']"></tr>
+        <tr mat-row *matRowDef="let row; columns: ['name', 'skill']"></tr>
+      </table>
+    </mat-tab>
+    <mat-tab label="Ex - 02">
+      <mat-chip><strong>Filter:</strong> by gender </mat-chip>
+      <table mat-table #table [dataSource]="msg2">
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef>Name</th>
+          <td mat-cell *matCellDef="let row">{{ row.name }}</td>
+        </ng-container>
+        <ng-container matColumnDef="skill">
+          <th mat-header-cell *matHeaderCellDef>Skill</th>
+          <td mat-cell *matCellDef="let row">{{ row.skill }}</td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="['name', 'skill']"></tr>
+        <tr mat-row *matRowDef="let row; columns: ['name', 'skill']"></tr>
+      </table>
+    </mat-tab>
+    <mat-tab label="Ex - 03">
+      <mat-chip><strong>Filter:</strong> by nth </mat-chip>
+      <table mat-table [dataSource]="msg3">
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef>id</th>
+          <td mat-cell *matCellDef="let row">{{ row.id }}</td>
+        </ng-container>
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef>Name</th>
+          <td mat-cell *matCellDef="let row">{{ row.name }}</td>
+        </ng-container>
+        <ng-container matColumnDef="skill">
+          <th mat-header-cell *matHeaderCellDef>Skill</th>
+          <td mat-cell *matCellDef="let row">{{ row.skill }}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="['id', 'name', 'skill']"></tr>
+        <tr mat-row *matRowDef="let row; columns: ['id', 'name', 'skill']"></tr>
+      </table>
+    </mat-tab>
+  </mat-tab-group>
+</div>

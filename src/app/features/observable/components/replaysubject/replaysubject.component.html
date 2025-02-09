@@ -1,0 +1,58 @@
+<div>
+  <h2>Replay Subject</h2>
+  <h4>Add video</h4>
+  <hr />
+  <div class="grid">
+    <mat-form-field>
+      <mat-label>Add video:</mat-label>
+      <input type="text" #video matInput />
+    </mat-form-field>
+    <button mat-flat-button (click)="addVideo(video.value)">Add Video</button>
+  </div>
+
+  <hr />
+  <div class="grid">
+    <div>
+      <h3>User 1</h3>
+      <hr />
+      <ng-container>
+        @for (item of userlist1; track $index) {
+        <mat-card
+          ><mat-card-content>{{ item }}</mat-card-content></mat-card
+        >
+
+        }
+      </ng-container>
+    </div>
+    <div>
+      <h3>User 2</h3>
+      <hr />
+      <ng-container>
+        @for (item of userlist2; track $index) {
+        <mat-card
+          ><mat-card-content>{{ item }}</mat-card-content></mat-card
+        >
+
+        }
+      </ng-container>
+      <button mat-flat-button (click)="subscribeUser2()">
+        {{ subscribeMode2 ? "Unsubscribe" : "Subscribe" }}
+      </button>
+    </div>
+    <div>
+      <h3>User 3</h3>
+      <hr />
+      <ng-container>
+        @for (item of userlist3; track $index) {
+        <mat-card
+          ><mat-card-content>{{ item }}</mat-card-content></mat-card
+        >
+
+        }
+      </ng-container>
+      <button mat-flat-button (click)="subscribeUser3()">
+        {{ subscribeMode3 ? "Unsubscribe" : "Subscribe" }}
+      </button>
+    </div>
+  </div>
+</div>

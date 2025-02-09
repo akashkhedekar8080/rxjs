@@ -1,0 +1,13 @@
+<mat-card>
+  <mat-card-title>Comp 2</mat-card-title>
+  <mat-card-subtitle>Name is {{ name }}</mat-card-subtitle>
+  <mat-card-content>
+    <mat-form-field>
+      <mat-label>Change Name:</mat-label>
+      <input type="text" matInput [(ngModel)]="name" />
+    </mat-form-field>
+  </mat-card-content>
+  <mat-card-footer>
+    <button mat-raised-button (click)="nameChange()">Change</button>
+  </mat-card-footer>
+</mat-card>

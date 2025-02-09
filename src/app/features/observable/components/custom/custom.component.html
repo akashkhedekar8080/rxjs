@@ -1,0 +1,28 @@
+<div class="container">
+  <h1>Custom Observable</h1>
+  <hr />
+  <div class="eg">
+    <div>
+      <strong>Ex- 01 (manual)</strong>
+      <hr />
+      <ul
+        class="customlist"
+        [ngClass]="
+          status1 == 'complete' ? 'complete' : status1 == 'error' ? 'error' : ''
+        "
+        #obs1Ul
+      ></ul>
+    </div>
+    <div>
+      <strong>Ex - 02(Custom Interval Observable)</strong>
+      <hr />
+      <ul
+        class="customlist"
+        [ngClass]="
+          status2 == 'complete' ? 'complete' : status2 == 'error' ? 'error' : ''
+        "
+        #obs2Ul
+      ></ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div>
+  <h2>ExhaustMap</h2>
+  <hr />
+  <div class="flex">
+    <button #btn>Save Data</button>
+    @if(fetching){
+    <ng-container>
+      <mat-spinner></mat-spinner>
+    </ng-container>
+    }
+
+    <mat-card>
+      <mat-card-content>save Request: {{ reqResponse }}</mat-card-content>
+    </mat-card>
+  </div>
+  <hr />
+</div>

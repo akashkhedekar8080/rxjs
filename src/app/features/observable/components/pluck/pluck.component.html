@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>Pluck</h1>
+  <hr />
+  <mat-tab-group>
+    <mat-tab label="Ex - 01">
+      <mat-chip><strong>Pluck:</strong> by property </mat-chip>
+      <mat-chip>Name</mat-chip>
+
+      <ul class="customlist complete">
+        @for (item of msg1; track $index) {
+        <li>{{ item }}</li>
+        }
+      </ul>
+    </mat-tab>
+    <mat-tab label="Ex - 02">
+      <mat-chip><strong>Pluck:</strong> by nested </mat-chip>
+      <mat-chip>Title</mat-chip>
+      <ul class="customlist complete">
+        @for ( item of msg2; track $index){
+        <li>{{ item }}</li>
+        }
+      </ul>
+    </mat-tab>
+  </mat-tab-group>
+</div>

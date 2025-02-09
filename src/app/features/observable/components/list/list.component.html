@@ -1,0 +1,14 @@
+<div>
+  @for (item of items; track $index) {
+  <mat-card
+    appearance="outlined"
+    class="card"
+    [routerLink]="item.link"
+    routerLinkActive="active"
+  >
+    <mat-card-content>
+      {{ item.label }}
+    </mat-card-content>
+  </mat-card>
+  }
+</div>

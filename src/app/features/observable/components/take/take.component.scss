@@ -1,0 +1,38 @@
+.container {
+  margin: 3rem;
+  mat-chip {
+    margin: 1rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 3rem;
+  }
+  ul.customlist {
+    margin: 1rem;
+    list-style: none;
+    padding: 0;
+  }
+}
+::ng-deep ul.customlist {
+  li {
+    padding: 1rem;
+    margin: 0.3rem;
+    border-radius: 0.5rem;
+    background-color: #f8f8f8;
+    border: solid 0.1rem black;
+  }
+  &.error {
+    li {
+      background-color: red;
+      opacity: 0.8;
+      color: #f8f8f8;
+      border: solid 0.1rem red;
+    }
+  }
+  &.complete {
+    li {
+      color: #f8f8f8;
+      background-color: green;
+      opacity: 0.8;
+      border: solid 0.1rem green;
+    }
+  }
+}

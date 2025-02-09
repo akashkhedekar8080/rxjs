@@ -1,0 +1,37 @@
+.container {
+  margin: 3rem;
+
+  .eg {
+    display: flex;
+    justify-content: space-around;
+
+    ul.customlist {
+      margin: 0;
+      list-style: none;
+      padding: 0;
+    }
+  }
+}
+::ng-deep ul.customlist {
+  li {
+    padding: 1rem;
+    margin: 0.3rem;
+    border-radius: 0.5rem;
+    background-color: #f8f8f8;
+    border: solid 0.1rem black;
+  }
+  &.error {
+    li {
+      background-color: red;
+      opacity: 0.7;
+      border: solid 0.1rem red;
+    }
+  }
+  &.complete {
+    li {
+      background-color: green;
+      opacity: 0.7;
+      border: solid 0.1rem green;
+    }
+  }
+}

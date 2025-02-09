@@ -1,0 +1,9 @@
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+  padding: 1rem;
+  mat-card {
+    margin: 1rem;
+  }
+}

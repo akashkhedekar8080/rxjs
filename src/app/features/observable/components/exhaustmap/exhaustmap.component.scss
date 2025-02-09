@@ -1,0 +1,12 @@
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+button {
+  border-radius: 1rem;
+  background-color: green;
+  color: white;
+  padding: 0.5rem;
+}

@@ -1,0 +1,42 @@
+<div class="container">
+  <h1>Of and From</h1>
+  <strong>Ex - 01(Of)</strong>
+  <hr />
+  <div class="eg">
+    <div>
+      <mat-chip>Data: of("Akash", "Omkar", "Vinu")</mat-chip>
+      <ul #obs1Ul></ul>
+    </div>
+    <div>
+      <mat-chip>Data: of(&#123;a:'Anup',b:'Akash',c:"vinu"&#125;)</mat-chip>
+      <ul>
+        <li>{{ obsres["a"] }}</li>
+        <li>{{ obsres["b"] }}</li>
+        <li>{{ obsres["c"] }}</li>
+      </ul>
+    </div>
+  </div>
+  <hr />
+  <strong>Ex - 01(from)</strong>
+  <hr />
+  <div class="eg">
+    <div>
+      <strong>Array</strong>
+      <hr />
+      <mat-chip>Data: from(["Akash", "Omkar", "Vinu"])</mat-chip>
+      <ul #obs3Ul></ul>
+    </div>
+    <div>
+      <strong>Promise</strong>
+      <hr />
+      <mat-chip>Data: Promise to Observable</mat-chip>
+      <ul #obs4Ul></ul>
+    </div>
+    <div>
+      <strong>String</strong>
+      <hr />
+      <mat-chip>Data: String to Observable</mat-chip>
+      <ul #obs5Ul></ul>
+    </div>
+  </div>
+</div>

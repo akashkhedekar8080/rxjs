@@ -1,0 +1,32 @@
+<div>
+  <h2>Async Subject</h2>
+  <h4>Add video</h4>
+  <hr />
+  <div class="grid">
+    <mat-form-field>
+      <mat-label>Add video:</mat-label>
+      <input type="text" #video matInput />
+    </mat-form-field>
+    <button mat-flat-button (click)="addVideo(video.value)">Add Video</button>
+  </div>
+
+  <hr />
+  <div class="grid">
+    <div>
+      <h3>User 01</h3>
+      <hr />
+      <mat-card
+        ><mat-card-content>
+          video : {{ asynVideoEmit }}</mat-card-content
+        ></mat-card
+      >
+    </div>
+    <div>
+      <h3>Click to Complete</h3>
+      <hr />
+      <button mat-flat-button (click)="onComplete()">
+        Complete Subscription
+      </button>
+    </div>
+  </div>
+</div>

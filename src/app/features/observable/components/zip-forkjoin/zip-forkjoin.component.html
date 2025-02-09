@@ -1,0 +1,29 @@
+<div>
+  <h2>Zip & ForkJoin</h2>
+  <div class="flex">
+    <fieldset>
+      <label>Name:</label>
+      <select #name>
+        @for(name of names;track name){
+        <option [value]="name">{{ name }}</option>
+        }
+      </select>
+    </fieldset>
+    <fieldset>
+      <label>Colors:</label>
+      <select #color>
+        @for(color of colors;track color){
+        <option [value]="color">{{ color }}</option>
+        }
+      </select>
+    </fieldset>
+  </div>
+  <hr />
+  <h4>Zip</h4>
+  <div #combine class="flex"></div>
+  <hr />
+
+  <h4>ForkJoin</h4>
+  <div #latest class="flex"></div>
+  <hr />
+</div>
